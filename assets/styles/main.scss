@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html { font-size: 1vw; }
+body { font-family: 'Bubbler One', sans-serif; }
+
+// Global
+
+h2, h3, h4, h5, p { margin: 0; }
+
+h2 { font-size: 8rem; }
+h3 { font-size: 3.5rem; margin-bottom: 1rem;}
+
+h4 {
+  font-family: 'Overpass';
+  font-size: 2rem;
+ }
+
+ h5 {
+   font-family: 'Overpass';
+   font-size: 1.8rem;
+  }
+
+p {
+  font-family: 'Overpass';
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.ease {
+  transition: .3s ease-in-out;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.indent {
+  padding-left: 3rem;
+
+  & h3 {
+    margin-left: -3rem;
+  }
+}
+
+.three-col {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+
+  p, a {
+    width: 30%;
+  }
+}
+
+.two-col {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  & div {
+    flex: 1;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-margin {
+  margin-bottom: 1rem;
+}
+
+// Body
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+
+  #header {
+    text-align: right;
+
+    h1 {
+      opacity: 0;
+      padding-right: 1rem;
+      display: inline-block;
+    }
+
+    .header-banner {
+      height: 32rem;
+      background: url('../img/table.jpg') no-repeat center center / cover;
+      border-top: 1rem solid #343434;
+      margin-bottom: 2rem;
+    }
+
+    .fade-in {
+      opacity: 1;
+      padding-right: 0;
+    }
+  }
+
+  #main {
+
+    .about {
+
+    }
+
+    // Fullee - current project
+    .fullee-callout {
+      background: rgba(80,80,80,.1);
+      padding: 6rem 4rem;
+      color: #333;
+      text-align: center;
+
+      .three-col {
+        margin-top: 3rem;
+      }
+
+      a {
+        color: rgba(80,80,80,.5);
+        transition: .2s ease-in-out;
+
+        &:hover {
+          color: rgba(80,80,80,1);
+        }
+      }
+
+      .fa {
+        font-size: 3rem;
+      }
+    }
+
+    .fullee-logo {
+      background: rgba(80,80,80,.5);
+      height: 24rem;
+      width: 100%;
+
+      h2 {
+        font-family: 'Vibur', cursive;
+        border: 1rem solid #fff;
+        padding: 2rem 4rem;
+        font-size: 6rem;
+        display: inline-block;
+        color: #fff;
+      }
+    }
+
+  }
+
+  // Sound
+  .sound-container {
+    height: 24rem;
+    border-bottom: 1px solid #333;
+    vertical-align: bottom;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    .bar {
+      width: 10%;
+      background-color: #333;
+      transition: 1s ease;
+    }
+
+    .bar-1 { height: 6rem }
+    .bar-1-height { height: 10rem; }
+    .bar-2 { height: 4rem ; }
+    .bar-2-height { height: 7rem;}
+    .bar-3 { height: 8rem ; }
+    .bar-3-height { height: 14rem;}
+    .bar-4 { height: 8rem ; }
+    .bar-4-height { height: 11rem;}
+    .bar-5 { height: 4rem ; }
+    .bar-5-height { height: 10rem;}
+    .bar-6 { height: 14rem ; }
+    .bar-6-height { height: 17rem;}
+    .bar-7 { height: 10rem ; }
+    .bar-7-height { height: 14rem;}
+    .bar-8 { height: 8rem ; }
+    .bar-8-height { height: 15rem;}
+
+    .blue-bar {
+      background-color: #45A7BA;
+    }
+    
+  }
+}
+
+// Footer
+#footer {
+  overflow: hidden;
+  height: 30rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+  .footer-video {
+    flex: 2;
+
+    video {
+      margin-top: -5rem;
+      width: 100%;
+    }
+  }
+
+  .footer-callout {
+    flex: 1;
+    padding: 2rem;
+  }
+}
